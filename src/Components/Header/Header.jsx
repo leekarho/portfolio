@@ -7,6 +7,7 @@ export default function Header() {
         <div>About</div>
         <div>Skills</div>
         <div>Projects</div>
+        <div>Contact</div>
       </section>
     </>
   );
