@@ -13,6 +13,7 @@ export default function Skills() {
   return (
     <>
       <section id="skills">
+        <h2>SKILLS</h2>
         <div>
           <SiJavascript />
           <p>Javascript</p>

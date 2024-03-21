@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <section id="about">
-        <h2>About</h2>
+        <h2>ABOUT</h2>
         <img src={profilePic} alt="Profile pic" />
         <p>
           Hello, and welcome to my portfolio page. My name is Kar-ho, a

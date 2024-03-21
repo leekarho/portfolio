@@ -15,6 +15,7 @@ export default function Projects() {
   return (
     <>
       <section id="projects">
+        <h2>PROJECTS</h2>
         <div>
           <img src={ncNews} alt="Screenshot of Nc News" />
           <p>Nc News</p>
