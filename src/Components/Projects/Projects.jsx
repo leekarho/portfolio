@@ -37,6 +37,14 @@ export default function Projects() {
               <p>CSS</p>
             </div>
           </div>
+          <div>
+            <a href="https://karho-nc-news.netlify.app/" target="_blank">
+              <button>Live</button>
+            </a>
+            <a href="https://github.com/leekarho/fe-nc-news" target="_blank">
+              <button>Github</button>
+            </a>
+          </div>
         </div>
         <div>
           <img src={ncNewsApi} alt="Screenshot of Nc News Api" />
@@ -54,6 +62,14 @@ export default function Projects() {
               <SiPostgresql />
               <p>PostreSQL</p>
             </div>
+          </div>
+          <div>
+            <a href="https://nc-news-u31g.onrender.com/api" target="_blank">
+              <button>Live</button>
+            </a>
+            <a href="https://github.com/leekarho/be-nc-news" target="_blank">
+              <button>Github</button>
+            </a>
           </div>
         </div>
         <div>
@@ -76,6 +92,17 @@ export default function Projects() {
               <SiCss3 />
               <p>CSS</p>
             </div>
+          </div>
+          <div>
+            <a
+              href="https://northcoders.com/project-phase/buddies"
+              target="_blank"
+            >
+              <button>Demo video</button>
+            </a>
+            <a href="https://github.com/codertetianka/Buddies" target="_blank">
+              <button>Github</button>
+            </a>
           </div>
         </div>
       </section>
