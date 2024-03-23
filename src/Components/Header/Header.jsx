@@ -1,31 +1,30 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId)
-    section.scrollIntoView({behavior: "smooth"})
-  }
+  // const scrollToSection = (sectionId) => {
+  //   const section = document.getElementById(sectionId);
+  //   section.scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <>
-      <section id="nav">
-       <ul>
-        <li>
-            <a href="#about" onClick={() => scrollToSection("about")}>About</a>
-        </li>
-        <li>
-            <a href="#skills" onClick={() => scrollToSection("skills")}>Skills</a>
-        </li>
-        <li>
-            <a href="#projects" onClick={() => scrollToSection("projects")}>projects</a>
-        </li>
-        <li>
-            <a href="#contact" onClick={() => scrollToSection("contact")}>Contact</a>
-        </li>
-
-       </ul>
-      </section>
+      <header id="nav" className={styles.container}>
+        <h1>Kar-ho Lee: Software Developer</h1>
+        <ul className={styles.linksContainer}>
+          <NavLink link="#about" label="About"/>
+          <NavLink link="#skills" label="Skills"/>
+          <NavLink link="#projects" label="Projects"/>
+          <NavLink link="#contact" label="Contact"/>
+        </ul>
+      </header>
     </>
+  );
+}
+
+function NavLink(props) {
+  return (
+    <li className={styles.navLink}>
+      <a className={styles.link} href={props.link}>{props.label}</a>
+    </li>
   );
 }

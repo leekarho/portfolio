@@ -1,0 +1,31 @@
+h2 {
+  color: #69c7c7;
+}
+
+.image {
+    background-image: url('../../assets/profilePic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #69c7c7;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .aboutMe {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

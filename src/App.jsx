@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Header from "./Components/Header/Header";
@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main className={styles.main}>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
     </>
   );
 }
