@@ -22,6 +22,7 @@ export default function Projects() {
             image={ncNews}
             alt="Screenshot of Nc News"
             title="Nc News"
+            blurb="Social media forum, in the style of Reddit"
             languages={["react", "js", "html", "css"]}
             href="https://karho-nc-news.netlify.app/"
             githubHRef="https://github.com/leekarho/fe-nc-news"
@@ -32,6 +33,7 @@ export default function Projects() {
             image={ncNewsApi}
             alt="Screenshot of Nc News Api"
             title="Nc News Api"
+            blurb="Backend API which provides information to NC News"
             languages={["node", "express", "psql"]}
             href="https://nc-news-u31g.onrender.com/api"
             githubHRef="https://github.com/leekarho/be-nc-news"
@@ -42,6 +44,7 @@ export default function Projects() {
             image={buddies}
             alt="Screenshot of Buddies app"
             title="Buddies"
+            blurb="A mobile app, designed to simplify plant care"
             languages={["react native", "firebase", "html", "css"]}
             href="https://northcoders.com/project-phase/buddies"
             githubHRef="https://github.com/codertetianka/Buddies"
@@ -63,47 +66,50 @@ function Project(props) {
           <img className={styles.image} src={props.image} alt={props.alt} />
         </div>
       </div>
-      <p>{props.title}</p>
-      {languages.map((language, index) => {
-        let icon;
-        switch (language) {
-          case "js":
-            icon = <SiJavascript />;
-            break;
-          case "react native":
-            icon = <TbBrandReactNative />;
-            break;
-          case "firebase":
-            icon = <SiFirebase />;
-            break;
-          case "html":
-            icon = <FaHtml5 />;
-            break;
-          case "css":
-            icon = <SiCss3 />;
-            break;
-          case "psql":
-            icon = <SiPostgresql />;
-            break;
-          case "express":
-            icon = <SiExpress />;
-            break;
-          case "node":
-            icon = <FaNodeJs />;
-            break;
-          case "react":
-            icon = <FaReact />;
-            break;
-        }
+      <p className={styles.title}>{props.title}</p>
+      <p className={styles.blurb}>{props.blurb}</p>
+      <div className={styles.languages}>
+        {languages.map((language, index) => {
+          let icon;
+          switch (language) {
+            case "js":
+              icon = <SiJavascript />;
+              break;
+            case "react native":
+              icon = <TbBrandReactNative />;
+              break;
+            case "firebase":
+              icon = <SiFirebase />;
+              break;
+            case "html":
+              icon = <FaHtml5 />;
+              break;
+            case "css":
+              icon = <SiCss3 />;
+              break;
+            case "psql":
+              icon = <SiPostgresql />;
+              break;
+            case "express":
+              icon = <SiExpress />;
+              break;
+            case "node":
+              icon = <FaNodeJs />;
+              break;
+            case "react":
+              icon = <FaReact />;
+              break;
+          }
 
-        return <div key={index}>{icon}</div>;
-      })}
+          return <div key={index}>{icon}</div>;
+        })}
+      </div>
 
-      <div>
-        <a href={props.href} target="_blank">
+      <div className={styles.btns}>
+        <a className={styles.btn} href={props.href} target="_blank">
           {props.btn}
         </a>
-        <a href={props.githubHRef} target="_blank">
+        <a className={styles.btn} href={props.githubHRef} target="_blank">
           Github
         </a>
       </div>

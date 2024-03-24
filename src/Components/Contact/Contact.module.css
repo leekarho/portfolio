@@ -1,0 +1,38 @@
+#contact {
+    margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  gap: 40px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #69c7c7;
+}
+
+.iconLink {
+  font-size: 30px;
+  color: #69c7c7;
+}
+
+.iconLink:hover {
+  font-size: 36px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  gap: 10px;
+  color: #69c7c7;
+}

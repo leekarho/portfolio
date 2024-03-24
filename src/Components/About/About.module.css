@@ -3,18 +3,34 @@ h2 {
 }
 
 .image {
-    background-image: url('../../assets/profilePic.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 100%;
-    width: 250px;
-    height: 250px;
-    border: 5px solid #69c7c7;
+  background-image: url("../../assets/profilePic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #69c7c7;
 }
 
 .textContainer {
   flex: 1;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.iconLink {
+  color: #69c7c7;
+  font-size: 30px;
+}
+
+.iconLink:hover {
+  font-size: 36px;
 }
 
 @media (min-width: 768px) {
@@ -22,6 +38,7 @@ h2 {
     display: flex;
     gap: 40px;
     align-items: center;
+    justify-content: center;
   }
   .container {
     display: flex;

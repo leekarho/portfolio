@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -21,6 +22,22 @@ export default function About() {
               traveller. I can often be found practising my serve on the tennis
               court.
             </p>
+            <div className={styles.contact}>
+              <a
+                className={styles.iconLink}
+                href="https://github.com/leekarho"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className={styles.iconLink}
+                href="https://github.com/leekarho"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </section>
