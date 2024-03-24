@@ -19,9 +19,7 @@ h2 {
 
 .contact {
   display: flex;
-  justify-content: center;
   gap: 10px;
-
 }
 
 .iconLink {
