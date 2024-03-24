@@ -1,0 +1,38 @@
+.container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techSection {
+  background-color: #23283e;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  float: left;
+  border: 4px solid #69c7c7;
+  width: 11%;
+  min-width: 120px;
+  height: 16vh;
+  max-height: 140px;
+  border-radius: 20px;
+  margin: 2.5%;
+}
+
+.badge h5 {
+    margin: 0;
+}
+
+.badge svg {
+    font-size: 8vh;
+    color: #69c7c7;
+}

@@ -6,14 +6,15 @@ export default function About() {
       <section id="about" className={styles.container}>
         <h2>ABOUT</h2>
         <div className={styles.aboutMe}>
-          <div className={styles.image}/>
+          <div className={styles.image} />
           <div className={styles.textContainer}>
             <p>
               Hello, and welcome to my portfolio page. My name is{" "}
               <span style={{ color: "#69c7c7" }}>Kar-ho</span>, a job-ready
               full-stack developer. I am a Northcoders software engineer
-              graduate. It was a great experience and a lot of fun: if I could,
-              I would do it all over again!
+              graduate, with a passion for learning and building software
+              applications. The course was a great experience and a lot of fun:
+              if I could, I would do it all over again!
             </p>
             <p>
               Away from the computer, I am a sports enthusiast and a keen

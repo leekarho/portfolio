@@ -1,3 +1,4 @@
+import styles from "./Skills.module.css";
 import {
   SiCss3,
   SiExpress,
@@ -12,53 +13,36 @@ import { TbBrandReactNative } from "react-icons/tb";
 export default function Skills() {
   return (
     <>
-      <section id="skills">
-        <h2>SKILLS</h2>
-        <div>
-          <SiJavascript />
-          <p>Javascript</p>
-        </div>
-        <div>
-          <FaNodeJs />
-          <p>Node.js</p>
-        </div>
-        <div>
-          <SiJest />
-          <p>Jest</p>
-        </div>
-        <div>
-          <FaReact />
-          <p>React</p>
-        </div>
-        <div>
-          <TbBrandReactNative />
-          <p>React Native</p>
-        </div>
-        <div>
-          <SiExpress />
-          <p>Express</p>
-        </div>
-        <div>
-          <SiFirebase />
-          <p>Firebase</p>
-        </div>
-        <div>
-          <SiPostgresql />
-          <p>PostreSQL</p>
-        </div>
-        <div>
-          <FaGit />
-          <p>Git</p>
-        </div>
-        <div>
-          <FaHtml5 />
-          <p>HTML</p>
-        </div>
-        <div>
-          <SiCss3 />
-          <p>CSS</p>
+      <section id="skills" className={styles.container}>
+        <h2>
+          <span style={{ color: "#69c7c7" }}> SKILLS</span>
+        </h2>
+        <div className={styles.techSection}>
+          <SkillBadge Icon={SiJavascript} label="JavaScript" />
+          <SkillBadge Icon={FaNodeJs} label="Node.js" />
+          <SkillBadge Icon={SiJest} label="Jest" />
+          <SkillBadge Icon={FaReact} label="React" />
+          <SkillBadge Icon={TbBrandReactNative} label="React Native" />
+          <SkillBadge Icon={SiExpress} label="Express" />
+          <SkillBadge Icon={SiFirebase} label="Firebase" />
+          <SkillBadge Icon={SiPostgresql} label="PostreSQL" />
+          <SkillBadge Icon={FaNodeJs} label="Node.js" />
+          <SkillBadge Icon={FaGit} label="Git" />
+          <SkillBadge Icon={FaHtml5} label="HTML" />
+          <SkillBadge Icon={SiCss3} label="CSS" />
         </div>
       </section>
     </>
+  );
+}
+
+function SkillBadge(props) {
+  const Icon = props.Icon;
+
+  return (
+    <div className={styles.badge}>
+      <Icon />
+      <h5>{props.label}</h5>
+    </div>
   );
 }
