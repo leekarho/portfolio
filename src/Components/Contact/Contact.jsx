@@ -23,10 +23,18 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles.social}>
-          <a className={styles.iconLink} href="https://github.com/leekarho" target="_blank">
+          <a
+            className={styles.iconLink}
+            href="https://github.com/leekarho"
+            target="_blank"
+          >
             <FaGithub />
           </a>
-          <a className={styles.iconLink} href="https://github.com/leekarho" target="_blank">
+          <a
+            className={styles.iconLink}
+            href="https://www.linkedin.com/in/kar-ho-lee-2b4614156/"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
         </div>

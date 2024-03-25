@@ -32,7 +32,7 @@ export default function About() {
               </a>
               <a
                 className={styles.iconLink}
-                href="https://github.com/leekarho"
+                href="https://www.linkedin.com/in/kar-ho-lee-2b4614156/"
                 target="_blank"
               >
                 <FaLinkedin />
