@@ -2,13 +2,22 @@ import styles from "./Contact.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Contact() {
+  const { ref, inView } = useInView({ threshold: 0.1 });
+
   return (
     <>
-      <section id="contact">
+      <section id="contact" ref={ref}>
         <h2>CONTACT</h2>
-        <div className={styles.container}>
+        <motion.div
+          className={styles.container}
+          initial={{ x: -200 }}
+          animate={inView ? { x: 0 } : { x: -100 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className={styles.contact}>
             <span className={styles.icon}>
               <FaPhone />
@@ -21,8 +30,12 @@ export default function Contact() {
             </span>
             <p>email: k-h_lee@hotmail.co.uk</p>
           </div>
-        </div>
-        <div className={styles.social}>
+        </motion.div>
+        <motion.div
+          className={styles.social}
+          initial={{ x: -100 }}
+          animate={inView ? { x: 0 } : { x: -100 }}
+        >
           <a
             className={styles.iconLink}
             href="https://github.com/leekarho"
@@ -37,7 +50,7 @@ export default function Contact() {
           >
             <FaLinkedin />
           </a>
-        </div>
+        </motion.div>
       </section>
     </>
   );

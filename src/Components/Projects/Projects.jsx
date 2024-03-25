@@ -11,13 +11,23 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Projects() {
+  const { ref, inView } = useInView({ threshold: 0.1 });
+  console.log(inView);
   return (
     <>
       <section id="projects">
         <h2>PROJECTS</h2>
-        <div className={styles.container}>
+        <motion.div
+          className={styles.container}
+          ref={ref}
+          initial={{ x: -200 }}
+          animate={inView ? { x: 0 } : { x: -100 }}
+          transition={{ duration: 0.5 }}
+        >
           <Project
             image={ncNews}
             alt="Screenshot of Nc News"
@@ -50,7 +60,7 @@ export default function Projects() {
             githubHRef="https://github.com/codertetianka/Buddies"
             btn="Demo video"
           />
-        </div>
+        </motion.div>
       </section>
     </>
   );
