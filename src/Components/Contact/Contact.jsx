@@ -33,8 +33,9 @@ export default function Contact() {
         </motion.div>
         <motion.div
           className={styles.social}
-          initial={{ x: -100 }}
+          initial={{ x: -300 }}
           animate={inView ? { x: 0 } : { x: -100 }}
+          transition={{ duration: 1 }}
         >
           <a
             className={styles.iconLink}
